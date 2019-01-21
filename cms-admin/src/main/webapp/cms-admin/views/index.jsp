@@ -1,6 +1,7 @@
 
 <!DOCTYPE html>
 <html>
+<jsp:include   page="resourcePath.jsp" flush="true"/>
 <head>
     <title>Flatty - Flat administration template</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport' />
