@@ -1,6 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.sw.soft</groupId>
@@ -13,7 +12,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<junit.version>3.8.1</junit.version>
+		<junit.version>4.9</junit.version>
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<!-- <mybatis.version>3.2.8</mybatis.version> <mybatis.spring.version>1.2.2</mybatis.spring.version> 
 			<mybatis.paginator.version>1.2.15</mybatis.paginator.version> -->
@@ -224,7 +223,9 @@
 		<module>cms-admin</module>
 		<module>cms-web</module>
 		<module>sw-web</module>
-	</modules>
+    <module>user-management</module>
+    <module>organization</module>
+  </modules>
 
 	<build>
 		<finalName>${project.artifactId}</finalName>

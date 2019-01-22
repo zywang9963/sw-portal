@@ -54,3 +54,5 @@
 /sw-web/.settings/org.eclipse.wst.jsdt.ui.superType.name
 /sw-web/.settings/org.eclipse.wst.validation.prefs
 /sw-web/.settings/org.eclipse.wst.ws.service.policy.prefs
+/cms-admin/target/classes/com/cms/admin/controller/*.class
+*.class
