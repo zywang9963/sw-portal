@@ -6,7 +6,7 @@ import org.hibernate.annotations.GenericGenerator;
 
 @Entity
 @Table(name = "T_GROUP")
-public class Groups {
+public class Group {
 
 	@Id
 	@GeneratedValue(generator = "system-uuid")
@@ -20,17 +20,17 @@ public class Groups {
 	@Column(length = 200)
 	private String description;
 	
-	public Groups() {
+	public Group() {
 
 	}
 
-	public Groups(String id, String groupName, String description) {
+	public Group(String id, String groupName, String description) {
 		this.gid = gid;
 		this.setGroupName(groupName);
 		this.setDescription(description);
 	}
 	
-	public Groups(String groupName, String description) {
+	public Group(String groupName, String description) {
 		this.setGroupName(groupName);
 		this.setDescription(description);
 	}

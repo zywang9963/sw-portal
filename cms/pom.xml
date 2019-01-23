@@ -8,9 +8,9 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <groupId>org.sw.soft</groupId>
-  <artifactId>organization</artifactId>
+  <artifactId>cms</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>organization</name>
+  <name>cms</name>
   <url>http://maven.apache.org</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

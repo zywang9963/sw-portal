@@ -14,7 +14,6 @@
 	<mvc:default-servlet-handler />
 	<mvc:annotation-driven />
 
-	<!--完成请求和注解POJO的映射 -->
 	<bean
 		class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor" />
 

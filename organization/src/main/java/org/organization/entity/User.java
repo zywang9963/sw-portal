@@ -7,7 +7,7 @@ import org.hibernate.annotations.GenericGenerator;
   
 @Entity  
 @Table(name = "T_USER")  
-public class Users {  
+public class User {  
   
     @Id  
     @GeneratedValue(generator = "system-uuid")  
@@ -26,13 +26,13 @@ public class Users {
             name="groups_users",                    
             joinColumns= {@JoinColumn(name="uid")},        
             inverseJoinColumns= {@JoinColumn(name="gid")})
-    private Set<Groups> groups;
+    private Set<Group> groups;
 
-    public Users() {
+    public User() {
     	
     }
     
-    public Users(String userName, int age ) {
+    public User(String userName, int age ) {
     	this.userName = userName;
     	this.age = age;
     }
@@ -61,11 +61,11 @@ public class Users {
 		this.age = age;
 	}
    
-	public Set<Groups> getGroup() {
+	public Set<Group> getGroup() {
 		return groups;
 	}
 
-	public void setGroup(Set<Groups> groups) {
+	public void setGroup(Set<Group> groups) {
 		this.groups = groups;
 	}
 }  

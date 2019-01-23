@@ -225,6 +225,7 @@
 		<module>sw-web</module>
     <module>user-management</module>
     <module>organization</module>
+    <module>cms</module>
   </modules>
 
 	<build>

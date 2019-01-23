@@ -17,13 +17,13 @@
 		<context:include-filter type="annotation"
 			expression="org.springframework.stereotype.Controller" />
 	</context:component-scan>
-
-	<mvc:resources location="js/" mapping="/js/**" />
+	
+<!-- 	<mvc:resources location="js/" mapping="/js/**" />
 	<mvc:resources location="css/" mapping="/css/**" />
 	<mvc:resources location="images/" mapping="/images/**" />
 	<mvc:resources location="example/" mapping="/example/**" />
 	<mvc:resources location="plugins/" mapping="/plugins/**" />
-
+ -->
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/"></property>

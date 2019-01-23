@@ -12,8 +12,8 @@
     </welcome-file-list>  
     <context-param>  
         <param-name>contextConfigLocation</param-name>  
-        <param-value>classpath*:config/spring/spring-common*.xml</param-value>  
-    </context-param>  
+        <param-value>classpath*:config/spring/spring-common*.xml,classpath*:config/spring/beans-*.xml</param-value>  
+    </context-param>
     <!-- 配置Spring监听 -->  
     <listener>  
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>  

@@ -17,8 +17,8 @@ import org.hibernate.tool.hbm2ddl.SchemaExport;
 import org.hibernate.tool.schema.TargetType;
 import org.junit.Test;
 
-import org.organization.entity.Users;
-import org.organization.entity.Groups;
+import org.organization.entity.User;
+import org.organization.entity.Group;
 
 public class UserTest {
 
@@ -39,30 +39,30 @@ public class UserTest {
         //开启事务
         Transaction transaction=session.beginTransaction();
         
-        Groups g1=new Groups("G001","GROUP 1");
-        Groups g2=new Groups("G002","GROUP 2");
-        Groups g3=new Groups("G003","GROUP 3");
-        Groups g4=new Groups("G004","GROUP 4");
+        Group g1=new Group("G001","GROUP 1");
+        Group g2=new Group("G002","GROUP 2");
+        Group g3=new Group("G003","GROUP 3");
+        Group g4=new Group("G004","GROUP 4");
         
-        Users u1=new Users("张三",20);
-        Users u2=new Users("李四",21);
-        Users u3=new Users("王五",22);
-        Users u4=new Users("赵六",23);
+        User u1=new User("张三",20);
+        User u2=new User("李四",21);
+        User u3=new User("王五",22);
+        User u4=new User("赵六",23);
         
-        Set<Groups> set1=new HashSet<Groups>();
+        Set<Group> set1=new HashSet<Group>();
         set1.add(g1);
         set1.add(g2);
         
-        Set<Groups> set2=new HashSet<Groups>();
+        Set<Group> set2=new HashSet<Group>();
         set2.add(g3);
         set2.add(g4);
         
-        Set<Groups> set3=new HashSet<Groups>();
+        Set<Group> set3=new HashSet<Group>();
         set3.add(g1);
         set2.add(g3);
         set3.add(g4);
         
-        Set<Groups> set4=new HashSet<Groups>();
+        Set<Group> set4=new HashSet<Group>();
         set3.add(g1);
         set4.add(g2);
         set4.add(g4);
