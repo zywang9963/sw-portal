@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 注意下面配置中的spring-*.xsd的版本号要与使用的jar包匹配 -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/tx  
+        http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+	<context:component-scan
+		base-package="com.org.*"></context:component-scan>
+
+	<aop:config expose-proxy="true">
+		<!-- 只对业务逻辑层（service层）实施事务 -->
+		<aop:pointcut id="txPointcut-organization"
+			expression="execution(* com.org.service.*.*(..))" />
+		<aop:advisor advice-ref="txAdvice"
+			pointcut-ref="txPointcut-organization" />
+	</aop:config>
+</beans>  

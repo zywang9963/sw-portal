@@ -1,6 +1,7 @@
 
 <!DOCTYPE html>
 <html>
+<jsp:include   page="resourcePath.jsp" flush="true"/>
 <head>
     <title>Flatty - Flat administration template</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport' />
@@ -66,7 +67,7 @@
         <div class='caret'></div>
         <div class='form-wrapper'>
             <h1 class='text-center'>Sign up</h1>
-            <form accept-charset="UTF-8" action="index.html" method="get" /><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+            <form accept-charset="UTF-8" action="/sw-web/cms-admin/home" method="get" /><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
                 <div class='row-fluid'>
                     <div class='span12 icon-over-input'>
                         <input class="span12" id="email" name="email" placeholder="E-mail" type="text" value="" />

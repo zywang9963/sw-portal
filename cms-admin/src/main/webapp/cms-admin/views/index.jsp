@@ -3,7 +3,7 @@
 <html>
 <jsp:include   page="resourcePath.jsp" flush="true"/>
 <head>
-    <title>Flatty - Flat administration template</title>
+    <title>CMS - Administrator Console</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport' />
     
     <!--[if lt IE 9]>
@@ -235,7 +235,7 @@
                             </li>
                             <li class='divider'></li>
                             <li>
-                                <a href='sign_in.html'>
+                                <a href='/sw-web/cms-admin/signout'>
                                     <i class='icon-signout'></i>
                                     Sign out
                                 </a>
@@ -462,7 +462,7 @@
             </a>
         </li>
         <li class=''>
-            <a href='sign_in.html'>
+            <a href='/sw-web/cms-admin/signin'>
                 <i class='icon-signin'></i>
                 <span>Sign in</span>
             </a>

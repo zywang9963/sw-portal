@@ -4,7 +4,7 @@
 	xmlns="http://java.sun.com/xml/ns/javaee"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
 	version="3.0">
-	<display-name>cms-web</display-name>  
+	<display-name>sw-web</display-name>  
     <welcome-file-list>  
         <welcome-file>index.html</welcome-file>
 		<welcome-file>index.htm</welcome-file>
@@ -12,7 +12,12 @@
     </welcome-file-list>  
     <context-param>  
         <param-name>contextConfigLocation</param-name>  
-        <param-value>classpath*:config/spring/spring-common*.xml,classpath*:config/spring/beans-*.xml</param-value>  
+        <param-value>
+        classpath*:config/spring/applicationContext.xml,
+        classpath*:config/spring/appContext-*.xml,
+        classpath*:config/spring/beans-*.xml
+        <!-- classpath*:config/spring/applicationContext_all.xml  -->
+        </param-value>  
     </context-param>
     <!-- 配置Spring监听 -->  
     <listener>  

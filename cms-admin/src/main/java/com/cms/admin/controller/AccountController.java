@@ -15,13 +15,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/cms-admin")
 public class AccountController {
 
-    @RequestMapping("/login")  
-    public String accountLogin(HttpServletRequest request) {  
-        return "/cms-admin/views/jsp/login";  
+    @RequestMapping("/signin")  
+    public String accountSignin(HttpServletRequest request) {  
+        return "/cms-admin/views/sign_in";  
     }
     
-    @RequestMapping("/logout")  
+    @RequestMapping("/signout")  
     public String accountLogout(HttpServletRequest request) {  
-        return "/cms-admin/views/jsp/logout";  
+        return "/cms-admin/views/sign_in";  
+    }
+    
+    @RequestMapping("/signup")  
+    public String accountSignup(HttpServletRequest request) {  
+        return "/cms-admin/views/sign_up";  
     }
 }

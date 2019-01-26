@@ -1,6 +1,7 @@
 
 <!DOCTYPE html>
 <html>
+<jsp:include   page="resourcePath.jsp" flush="true"/>
 <head>
     <title>Flatty - Flat administration template</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport' />
@@ -91,7 +92,7 @@
         </div>
     </div>
     <div class='login-action text-center'>
-        <a href="sign_up.html"><i class='icon-user'></i>
+        <a href="/sw-web/cms-admin/signup"><i class='icon-user'></i>
             New to Flatty?
             <strong>Sign up</strong>
         </a>
