@@ -17,7 +17,7 @@ public class UserDaoImpl  implements UserDao {
     @Override  
     public User getUser(String id) {  
         String hql = "from User u where u.id=?0";  
-        Query query = sessionFactory.getCurrentSession().createQuery(hql);  
+        Query<User> query = sessionFactory.getCurrentSession().createQuery(hql);  
         query.setParameter(0, id);
         return (User) query.uniqueResult();  
     }  
@@ -25,7 +25,7 @@ public class UserDaoImpl  implements UserDao {
     @Override  
     public List<User> getAllUser() {  
         String hql = "from User";  
-        Query query = sessionFactory.getCurrentSession().createQuery(hql);  
+        Query<User> query = sessionFactory.getCurrentSession().createQuery(hql);  
         return query.list();  
     }  
   
@@ -37,7 +37,7 @@ public class UserDaoImpl  implements UserDao {
     @Override  
     public boolean delUser(String id) {  
         String hql = "delete User u where u.uid = ?0";  
-        Query query = sessionFactory.getCurrentSession().createQuery(hql);  
+        Query<User> query = sessionFactory.getCurrentSession().createQuery(hql);  
         query.setParameter(0, id);  
         return (query.executeUpdate() > 0);  
     }  
@@ -45,7 +45,7 @@ public class UserDaoImpl  implements UserDao {
     @Override  
     public boolean updateUser(User user) {  
         String hql = "update User u set u.userName = ?0,u.age=?1 where u.uid = ?2";  
-        Query query = sessionFactory.getCurrentSession().createQuery(hql);  
+        Query<User> query = sessionFactory.getCurrentSession().createQuery(hql);  
         query.setParameter(0, user.getUserName());  
         query.setParameter(1, user.getAge());  
         query.setParameter(2, user.getUid());  

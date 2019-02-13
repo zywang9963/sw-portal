@@ -21,6 +21,12 @@ public class User {
     @Column(length = 5)  
     private int age;  
     
+    @Column(length = 32)  
+    private String email; 
+    
+    @Column(length = 32)  
+    private String password; 
+    
 	@ManyToMany
     @JoinTable(                                
             name="groups_users",                    
@@ -67,5 +73,21 @@ public class User {
 
 	public void setGroup(Set<Group> groups) {
 		this.groups = groups;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
 }  
